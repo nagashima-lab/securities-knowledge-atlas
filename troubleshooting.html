@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="証券業務の困りごとや異常対応を、確認手順と関連用語とともに確認できるページです。" />
+    <meta name="theme-color" content="#102a43" />
+    <title>困りごとから探す | SECURITIES KNOWLEDGE ATLAS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="troubleshooting">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="SECURITIES KNOWLEDGE ATLAS ホームへ移動">
+          <span class="brand-mark">S</span>
+          <span>SECURITIES KNOWLEDGE ATLAS</span>
+        </a>
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          <a class="nav-link" href="index.html" data-page="index">ホーム</a>
+          <a class="nav-link" href="flow.html" data-page="flow">業務マップ</a>
+          <a class="nav-link" href="knowledge.html" data-page="knowledge">ナレッジ</a>
+          <a class="nav-link" href="glossary.html" data-page="glossary">用語集</a>
+          <a class="nav-link" href="troubleshooting.html" data-page="troubleshooting" aria-current="page">困りごとから探す</a>
+          <a class="nav-link" href="learning.html" data-page="learning">学習コース</a>
+          <a class="nav-link" href="about.html" data-page="about">このサイトについて</a>
+        </nav>
+        <div class="header-actions">
+          <form class="quick-search" data-site-search-form>
+            <label class="visually-hidden" for="site-search-troubleshooting">サイト内検索</label>
+            <input id="site-search-troubleshooting" type="search" placeholder="検索" data-site-search-input />
+          </form>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="メニューを開く">メニュー</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <div class="container page-head reveal">
+        <span class="page-kicker">TROUBLESHOOTING GUIDE</span>
+        <h1>困りごとから探す</h1>
+      </div>
+
+      <section class="container section reveal">
+        <div class="filter-panel">
+          <div class="filter-grid">
+            <label>
+              <span class="visually-hidden">シナリオ検索</span>
+              <input id="troubleshooting-search" class="filter-input" type="search" placeholder="キーワードで検索" />
+            </label>
+            <label>
+              <span class="visually-hidden">対象範囲</span>
+              <select id="troubleshooting-scope" class="filter-select">
+                <option value="">対象範囲を選択</option>
+              </select>
+            </label>
+          </div>
+          <div class="results-bar">
+            <button type="button" id="reset-troubleshooting" class="ghost-button">条件をリセット</button>
+            <div class="result-count" id="troubleshooting-result-count" aria-live="polite">0件</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section reveal">
+        <div class="scenario-grid" id="scenario-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <h3>SECURITIES KNOWLEDGE ATLAS</h3>
+            <p>証券業務を、点ではなく流れで理解する。</p>
+          </div>
+          <nav class="footer-nav" aria-label="サイト内ナビゲーション">
+            <a href="index.html">ホーム</a>
+            <a href="flow.html">業務マップ</a>
+            <a href="knowledge.html">ナレッジ</a>
+            <a href="glossary.html">用語集</a>
+            <a href="troubleshooting.html">困りごとから探す</a>
+            <a href="learning.html">学習コース</a>
+          </nav>
+        </div>
+        <p class="footer-note">本サイトはUI・ナレッジ設計を目的としたデモサイトです。実務・取引・投資判断には使用しないでください。</p>
+        <p class="footer-meta">© Securities Knowledge Atlas Demo</p>
+      </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="data/troubleshooting-data.js"></script>
+    <script src="js/troubleshooting.js"></script>
+  </body>
+</html>

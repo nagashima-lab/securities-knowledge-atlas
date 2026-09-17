@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="証券業務の全体像、ナレッジ、用語、困りごとを一つのサイトで確認できるデモサイトです。" />
+    <meta name="theme-color" content="#102a43" />
+    <title>SECURITIES KNOWLEDGE ATLAS | 証券業務ナレッジアトラス</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="index">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="SECURITIES KNOWLEDGE ATLAS ホームへ移動">
+          <span class="brand-mark">S</span>
+          <span>SECURITIES KNOWLEDGE ATLAS</span>
+        </a>
+
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          <a class="nav-link" href="index.html" data-page="index" aria-current="page">ホーム</a>
+          <a class="nav-link" href="flow.html" data-page="flow">業務マップ</a>
+          <a class="nav-link" href="knowledge.html" data-page="knowledge">ナレッジ</a>
+          <a class="nav-link" href="glossary.html" data-page="glossary">用語集</a>
+          <a class="nav-link" href="troubleshooting.html" data-page="troubleshooting">困りごとから探す</a>
+          <a class="nav-link" href="learning.html" data-page="learning">学習コース</a>
+          <a class="nav-link" href="about.html" data-page="about">このサイトについて</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-label="メニューを開く">メニュー</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section class="hero">
+        <div class="container hero-inner reveal">
+          <span class="hero-label">SECURITIES KNOWLEDGE ATLAS</span>
+          <h1>証券業務を、<br />点ではなく流れで理解する。</h1>
+          <p class="lead">業務フロー、用語、困りごとから、必要な知識へすばやくアクセスできます。</p>
+
+          <div class="search-panel">
+            <label class="visually-hidden" for="global-search">横断検索</label>
+            <div class="search-box">
+              <input id="global-search" class="search-input" type="search" placeholder="用語、業務、困りごとを入力してください" aria-describedby="search-hint" />
+              <button type="button" class="primary-button" data-search-trigger>検索</button>
+            </div>
+            <p id="search-hint" class="visually-hidden">例：受渡日、約定照合、決済、残高不一致</p>
+            <div class="search-suggestions" id="search-suggestions" aria-live="polite">
+              <ul class="suggestion-list" id="suggestion-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Quick access</span>
+            <h2>すばやくたどる</h2>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <a href="flow.html" class="card-link">
+              <div class="card-icon">↗</div>
+              <h3>業務フローから探す</h3>
+              <p>取引の流れを見ながら、現在の工程との位置関係を理解できます。</p>
+              <span class="list-link">業務マップを見る</span>
+            </a>
+          </article>
+          <article class="card">
+            <a href="knowledge.html" class="card-link">
+              <div class="card-icon">⌕</div>
+              <h3>用語から探す</h3>
+              <p>約定、決済、残高などの概念を、比較や関連用語とセットで確認できます。</p>
+              <span class="list-link">ナレッジ一覧を見る</span>
+            </a>
+          </article>
+          <article class="card">
+            <a href="troubleshooting.html" class="card-link">
+              <div class="card-icon">⚑</div>
+              <h3>困りごとから探す</h3>
+              <p>残高不一致や決済未了など、事象ベースで確認を開始できます。</p>
+              <span class="list-link">トラブルシューティングを見る</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Business overview</span>
+            <h2>業務全体像</h2>
+          </div>
+        </div>
+        <div class="flow-track" aria-label="証券業務の全体像">
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-001"><span class="step-number">1</span><span>口座・顧客管理</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-002"><span class="step-number">2</span><span>注文受付</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-003"><span class="step-number">3</span><span>発注</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-004"><span class="step-number">4</span><span>約定</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-005"><span class="step-number">5</span><span>約定照合</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-006"><span class="step-number">6</span><span>清算</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-007"><span class="step-number">7</span><span>決済</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-008"><span class="step-number">8</span><span>残高・保管</span></button></div>
+          <div class="flow-step"><button type="button" class="flow-link" data-flow-target="flow.html#step-009"><span class="step-number">9</span><span>報告・帳票</span></button></div>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Knowledge highlights</span>
+            <h2>よく見られているナレッジ</h2>
+          </div>
+        </div>
+        <div class="card-grid" data-knowledge-highlights></div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Learning path</span>
+            <h2>初心者向け学習コース</h2>
+          </div>
+        </div>
+        <div class="panel summary-block">
+          <div>
+            <h3>証券業務の全体像</h3>
+            <p class="lead">全8ステップ</p>
+          </div>
+          <p>想定所要時間：約30分</p>
+          <a class="primary-button" href="learning.html">学習を始める</a>
+        </div>
+      </section>
+
+      <section class="section container reveal" data-recent-section>
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Recent</span>
+            <h2>最近見たナレッジ</h2>
+          </div>
+          <button type="button" class="ghost-button" data-clear-recent>履歴を削除</button>
+        </div>
+        <div class="grid-3" data-recent-items></div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Updated knowledge</span>
+            <h2>更新されたナレッジ</h2>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <div class="label-row"><span class="badge">2025/06/09</span></div>
+            <h3>残高反映と保管の見え方</h3>
+            <p>処理済みと顧客に見える状態が違うことを整理したサンプル解説です。</p>
+          </article>
+          <article class="card">
+            <div class="label-row"><span class="badge">2025/06/06</span></div>
+            <h3>フロント・ミドル・バックオフィスの役割</h3>
+            <p>業務担当の境界と問い合わせ対応の切り分け方を整理しました。</p>
+          </article>
+          <article class="card">
+            <div class="label-row"><span class="badge">2025/06/03</span></div>
+            <h3>権利確定と権利落ちの違い</h3>
+            <p>配当や権利に関する事象を、対象日と残高の観点で理解するための解説です。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <h3>SECURITIES KNOWLEDGE ATLAS</h3>
+            <p>証券業務を、点ではなく流れで理解する。</p>
+          </div>
+          <nav class="footer-nav" aria-label="サイト内ナビゲーション">
+            <a href="index.html">ホーム</a>
+            <a href="flow.html">業務マップ</a>
+            <a href="knowledge.html">ナレッジ</a>
+            <a href="glossary.html">用語集</a>
+            <a href="troubleshooting.html">困りごとから探す</a>
+            <a href="learning.html">学習コース</a>
+          </nav>
+        </div>
+        <p class="footer-note">本サイトはUI・ナレッジ設計を目的としたデモサイトです。実務・取引・投資判断には使用しないでください。</p>
+        <p class="footer-meta">© Securities Knowledge Atlas Demo</p>
+      </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="data/knowledge-data.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
